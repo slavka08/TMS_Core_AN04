@@ -11,6 +11,11 @@ public class GreenDragon extends Dragon {
 
 
     @Override
+    public boolean hitByWeapon(Weapon weapon) {
+        return (weapon.getId() == 2);
+    }
+
+    @Override
     public String getDragonInfo() {
         return "here is green dragon, you can defeat him by axe";
     }

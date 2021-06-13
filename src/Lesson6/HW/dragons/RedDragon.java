@@ -10,6 +10,11 @@ public class RedDragon extends Dragon {
     }
 
     @Override
+    public boolean hitByWeapon(Weapon weapon) {
+        return ((weapon.getId() == 1) || (weapon.getId()== 4));
+    }
+
+    @Override
     public String getDragonInfo() {
         return "here is red dragon, you can defeat him by magic or bow";
     }
